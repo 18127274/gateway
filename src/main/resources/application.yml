@@ -143,6 +143,10 @@ spring:
         uri: https://userteam07.herokuapp.com/
       - id: user
         predicates:
+        - Path=/api/update_pwd
+        uri: https://userteam07.herokuapp.com/
+      - id: user
+        predicates:
         - Path=/api/create_staff
         uri: https://userteam07.herokuapp.com/
       - id: user
@@ -199,7 +203,7 @@ spring:
         uri: https://requestteam07.herokuapp.com/
       - id: request
         predicates:
-        - Path=/api/view_all_list_request_nghiphep_of_staff/**
+        - Path=/api/get_all_list_request_nghiphep_of_staff/**
         uri: https://requestteam07.herokuapp.com/
   main:
     web-application-type: reactive
