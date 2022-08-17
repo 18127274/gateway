@@ -107,6 +107,10 @@ spring:
         uri: https://requestteam07.herokuapp.com/
       - id: request
         predicates:
+        - Path=/api/list_ot_manager
+        uri: https://requestteam07.herokuapp.com/
+      - id: request
+        predicates:
         - Path=/api/get_ot_nv/**
         uri: https://requestteam07.herokuapp.com/
       - id: request
@@ -143,15 +147,15 @@ spring:
         uri: https://userteam07.herokuapp.com/
       - id: user
         predicates:
-        - Path=/api/update_pwd
-        uri: https://userteam07.herokuapp.com/
-      - id: user
-        predicates:
         - Path=/api/create_staff
         uri: https://userteam07.herokuapp.com/
       - id: user
         predicates:
         - Path=/api/update_profile_staff
+        uri: https://userteam07.herokuapp.com/
+      - id: user
+        predicates:
+        - Path=/api/update_pwd
         uri: https://userteam07.herokuapp.com/
       - id: user
         predicates:
@@ -205,5 +209,24 @@ spring:
         predicates:
         - Path=/api/get_all_list_request_nghiphep_of_staff/**
         uri: https://requestteam07.herokuapp.com/
+      - id: request
+        predicates:
+        - Path=/api/get_all_list_request_yeucauthietbi_of_staff/**
+        uri: https://requestteam07.herokuapp.com/
+      - id: request
+        predicates:
+        - Path=/api/get_all_list_request_ot_of_staff/**
+        uri: https://requestteam07.herokuapp.com/
+      - id: request
+        predicates:
+        - Path=/api/get_list_project_of_staff_by_id
+        uri: https://duanteam07.herokuapp.com/
+      - id: request
+        predicates:
+        - Path=/api/list_staff_manager1/**
+        uri: https://duanteam07.herokuapp.com/
+        
+        
+        
   main:
     web-application-type: reactive
