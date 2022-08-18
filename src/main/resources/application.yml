@@ -119,6 +119,10 @@ spring:
         uri: https://requestteam07.herokuapp.com/
       - id: request
         predicates:
+        - Path=/api/approve_ot
+        uri: https://requestteam07.herokuapp.com/
+      - id: request
+        predicates:
         - Path=/api/get_ot_id/**
         uri: https://requestteam07.herokuapp.com/
       - id: request
@@ -173,6 +177,10 @@ spring:
         predicates:
         - Path=/api/update_sophepconlai
         uri: https://userteam07.herokuapp.com/
+      - id: user
+        predicates:
+        - Path=/api/staff_basemanager
+        uri: https://userteam07.herokuapp.com/
       - id: request
         predicates:
         - Path=/api/get_yctb_by_staff_id/**
@@ -225,7 +233,33 @@ spring:
         predicates:
         - Path=/api/list_staff_manager1/**
         uri: https://duanteam07.herokuapp.com/
+      - id: request
+        predicates:
+        - Path=/api/list_ot_manager
+        uri: https://requestteam07.herokuapp.com/
+      - id: request
+        predicates:
+        - Path=/api/get_all_list_nghiphep_of_manager1
+        uri: https://requestteam07.herokuapp.com/  
+      - id: request
+        predicates:
+        - Path=/api/get_all_list_nghiphep_of_manager2
+        uri: https://requestteam07.herokuapp.com/  
+      - id: request
+        predicates:
+        - Path=/api/get_all_list_wfh_of_manager1
+        uri: https://requestteam07.herokuapp.com/  
+      - id: request
+        predicates:
+        - Path=/api/get_director_of_leader/**
+        uri: https://duanteam07.herokuapp.com/
+      - id: request
+        predicates:
+        - Path=/api/get_teamleader_manage_project_has_status_0/**
+        uri: https://duanteam07.herokuapp.com/
+      
         
+       
         
         
   main:
