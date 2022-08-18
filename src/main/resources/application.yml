@@ -181,6 +181,14 @@ spring:
         predicates:
         - Path=/api/staff_basemanager
         uri: https://userteam07.herokuapp.com/
+      - id: user
+        predicates:
+        - Path=/api/get_news/**
+        uri: https://userteam07.herokuapp.com/
+      - id: user
+        predicates:
+        - Path=/api/add_news
+        uri: https://userteam07.herokuapp.com/
       - id: request
         predicates:
         - Path=/api/get_yctb_by_staff_id/**
@@ -257,7 +265,21 @@ spring:
         predicates:
         - Path=/api/get_teamleader_manage_project_has_status_0/**
         uri: https://duanteam07.herokuapp.com/
+      - id: request
+        predicates:
+        - Path=/api/get_teamleader_manage_project_has_status_0/**
+        uri: https://duanteam07.herokuapp.com/
+      - id: request
+        predicates:
+        - Path=/api/get_all_list_nghiphep_by_role/**
+        uri: https://requestteam07.herokuapp.com/
+      - id: request
+        predicates:
+        - Path=/api/get_all_list_yctb_by_role/**
+        uri: https://requestteam07.herokuapp.com/
       
+        
+        
         
        
         
