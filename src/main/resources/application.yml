@@ -135,7 +135,7 @@ spring:
         uri: https://requestteam07.herokuapp.com/
       - id: request
         predicates:
-        - Path=/api/get_checkin_nv
+        - Path=/api/get_checkin_nv/**
         uri: https://requestteam07.herokuapp.com/
       - id: request
         predicates:
